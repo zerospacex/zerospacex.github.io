@@ -11,10 +11,15 @@
       padding: 0;
       box-sizing: border-box;
     }
+    
+    /* Smooth Scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
     /* Cosmic Background with Overlay */
     body {
       font-family: 'Helvetica Neue', Arial, sans-serif;
-      /* The linear-gradient creates a dark overlay on top of the background image */
       background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
                   url('planet-earth-background.webp') no-repeat center center fixed;
       background-size: cover;
@@ -24,15 +29,34 @@
       min-height: 100vh;
       line-height: 1.6;
     }
+
+    /* Animated Starry Background */
+    @keyframes stars {
+      from { background-position: 0 0; }
+      to { background-position: 1000px 1000px; }
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: url("https://i.ibb.co/DLhX3TX/stars.png") repeat;
+      opacity: 0.2;
+      animation: stars 50s linear infinite;
+    }
+
     header {
       padding: 2rem;
       text-align: center;
     }
+    
     header h1 {
       font-size: 3rem;
       letter-spacing: 2px;
       font-weight: 300;
     }
+    
     main {
       flex: 1;
       display: flex;
@@ -40,18 +64,22 @@
       justify-content: center;
       padding: 1rem;
     }
+    
     .content {
       text-align: center;
       max-width: 600px;
     }
+    
     .content h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
     }
+    
     .content p {
       font-size: 1.1rem;
       margin-bottom: 2rem;
     }
+    
     .button {
       display: inline-block;
       padding: 0.75rem 1.5rem;
@@ -62,14 +90,33 @@
       transition: background-color 0.3s ease;
       font-size: 1rem;
     }
+    
     .button:hover {
       background-color: #0056b3;
     }
+    
     footer {
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
       background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      .content h2 {
+        font-size: 1.5rem;
+      }
+      .content p {
+        font-size: 1rem;
+      }
+      .button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+      }
     }
   </style>
 </head>
@@ -77,6 +124,7 @@
   <header>
     <h1>Zerospace</h1>
   </header>
+  
   <main>
     <div class="content">
       <h2>Innovative App Development</h2>
@@ -86,6 +134,7 @@
       <a href="#services" class="button">Discover Our Services</a>
     </div>
   </main>
+  
   <footer>
     &copy; 2025 Zerospace. All rights reserved.
   </footer>
