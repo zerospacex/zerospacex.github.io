@@ -11,10 +11,14 @@
       padding: 0;
       box-sizing: border-box;
     }
+    /* Cosmic Background with Overlay */
     body {
       font-family: 'Helvetica Neue', Arial, sans-serif;
-      background-color: #fff;
-      color: #333;
+      /* The linear-gradient creates a dark overlay on top of the background image */
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                  url('planet-earth-background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
@@ -51,7 +55,7 @@
     .button {
       display: inline-block;
       padding: 0.75rem 1.5rem;
-      background-color: #333;
+      background-color: #007BFF;
       color: #fff;
       text-decoration: none;
       border-radius: 4px;
@@ -59,13 +63,13 @@
       font-size: 1rem;
     }
     .button:hover {
-      background-color: #555;
+      background-color: #0056b3;
     }
     footer {
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
-      background-color: #f4f4f4;
+      background-color: rgba(0, 0, 0, 0.5);
     }
   </style>
 </head>
@@ -77,7 +81,7 @@
     <div class="content">
       <h2>Innovative App Development</h2>
       <p>
-        We craft sleek, intuitive, and scalable apps that drive your business forward.
+        We craft sleek, intuitive, and scalable apps that drive your business forward into the cosmos.
       </p>
       <a href="#services" class="button">Discover Our Services</a>
     </div>
