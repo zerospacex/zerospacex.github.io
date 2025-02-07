@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to ZeroSpace</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zerospace - App Development</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      font-weight: 300;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .content {
+      text-align: center;
+      max-width: 600px;
+    }
+    .content h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .content p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+    .button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+      font-size: 1rem;
+    }
+    .button:hover {
+      background-color: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #f4f4f4;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to ZeroSpace!</h1>
-    <p>This is my new GitHub Pages site.</p>
+  <header>
+    <h1>Zerospace</h1>
+  </header>
+  <main>
+    <div class="content">
+      <h2>Innovative App Development</h2>
+      <p>
+        We craft sleek, intuitive, and scalable apps that drive your business forward.
+      </p>
+      <a href="#services" class="button">Discover Our Services</a>
+    </div>
+  </main>
+  <footer>
+    &copy; 2025 Zerospace. All rights reserved.
+  </footer>
 </body>
 </html>
