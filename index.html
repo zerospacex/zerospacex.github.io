@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Koushik Ahamed - Portfolio</title>
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Inter -->
@@ -15,16 +16,19 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+
         /* Simple animation for cards */
         .project-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .project-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
         }
     </style>
 </head>
+
 <body class="bg-gray-50 text-gray-800">
 
     <!-- Header Section -->
@@ -33,12 +37,13 @@
             <div class="flex items-center justify-between">
                 <div class="text-2xl font-bold text-gray-900">
                     <!-- TODO: Replace "Your Name" with your actual name -->
-                    Your Name
+                    Koushik Ahamed
                 </div>
                 <div class="flex space-x-4">
                     <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
                     <a href="#projects" class="text-gray-600 hover:text-blue-600">Projects</a>
                     <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+                    <a href="https://www.linkedin.com/in/koushikahamed/" target="_blank" class="text-gray-600 hover:text-blue-600">LinkedIn</a>
                 </div>
             </div>
         </nav>
@@ -50,15 +55,22 @@
         <!-- About Me Section -->
         <section id="about" class="text-center py-16">
             <!-- You can add a profile picture here if you like! -->
-            <!-- <img src="your-image-url.jpg" alt="Your Name" class="w-32 h-32 rounded-full mx-auto mb-4"> -->
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQEiEenac3T-kw/profile-displayphoto-shrink_200_200/B56ZUowWyTHoAc-/0/1740145520692?e=1758153600&v=beta&t=QLkF0GWvjYSPYwcGQQ1tZC1HZbLyx79E1LZV-FJuPXc" alt="Your Name" class="w-32 h-32 rounded-full mx-auto mb-4">
             <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                 <!-- TODO: Replace "Your Name" -->
-                Hi, I'm Your Name
+                Hi, I'm Koushik Ahamed
             </h1>
-            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+            <p class="text-lg md:text-xl text-gray-600 max-w-8xl mx-auto">
                 <!-- TODO: Write a short bio about yourself. What do you do? What are you passionate about? -->
-                I am a passionate and creative professional specializing in [Your Field]. I love solving complex problems and creating beautiful, user-friendly experiences. Welcome to my portfolio where I showcase some of my favorite projects.
+                I am a creative Technical Content Creator with a strong CSE background, specializing in turning complex technical concepts into clear, 
+                engaging, and visually appealing videos. With experience in scripting, recording, and editing, I bring projects to life through 
+                step-by-step tutorials and compelling narratives. I am passionate about exploring technology, AI, and machine learning, and sharing 
+                ideas in ways that are engaging, inspiring, and easy to understand. Welcome to my portfolio, where I showcase my work in video creation, 
+                product walkthroughs, and technical communication.
             </p>
+            <a href="https://drive.google.com/file/d/1NiNUWsn_bfE5CrflxekmqFW4YiHBySUZ/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="mt-6 inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                Curriculum Vitae
+            </a>
         </section>
 
         <!-- Projects Section -->
@@ -66,19 +78,38 @@
             <h2 class="text-3xl font-bold text-center mb-12">My Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
+                <!-- Project Card 0 -->
+                <div class="project-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">
+                            <!-- TODO: Replace with your project title -->
+                            Codeforces
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            <!-- TODO: Write a brief description of your project. -->
+                            Solving challenging problems and exploring algorithms, AI, and machine learning through programming competitions.
+                        </p>
+                        <a href="https://codeforces.com/profile/Plz_Accept" target="_blank" rel="noopener noreferrer"
+                            class="inline-block bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                            Profile
+                        </a>
+                    </div>
+                </div>
+
                 <!-- Project Card 1 -->
                 <div class="project-card bg-white rounded-lg shadow-md overflow-hidden">
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">
                             <!-- TODO: Replace with your project title -->
-                            Project Title 1
+                            YouTube Channel
                         </h3>
                         <p class="text-gray-600 mb-4">
                             <!-- TODO: Write a brief description of your project. -->
-                            A brief description of what this project is about, the problem it solves, or the skills it demonstrates.
+                            This is my YouTube channel where I create gaming videos as a hobby. I have 66.5K+ subscribers, 97 videos, and over 20 million views.
                         </p>
-                        <a href="YOUR_GOOGLE_DRIVE_SHARE_LINK_HERE" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
-                            View Document
+                        <a href="https://www.youtube.com/@foolstar" target="_blank" rel="noopener noreferrer"
+                            class="inline-block bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                            Visit Channel
                         </a>
                     </div>
                 </div>
@@ -88,14 +119,18 @@
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">
                             <!-- TODO: Replace with your project title -->
-                            Project Title 2
+                            Give Bangladesh
                         </h3>
                         <p class="text-gray-600 mb-4">
                             <!-- TODO: Write a brief description of your project. -->
-                            A brief description of what this project is about, the problem it solves, or the skills it demonstrates.
+                            In 2023, I worked as a Graphic Designer for the Give Bangladesh Foundation's Project Kombol campaign. Through this campaign, 
+                            I created various designs to support the initiative. Editing software: Photoshop, Canva. 
+                            This folder contains samples of my work from the campaign. Feel free to explore the designs to get an insight into my contributions.
+
                         </p>
-                        <a href="YOUR_GOOGLE_DRIVE_SHARE_LINK_HERE" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
-                            View Document
+                        <a href="https://drive.google.com/drive/folders/1sfAeyS95mbio50GQQ2hJrqK0JUxLN6_7?usp=sharing" target="_blank" rel="noopener noreferrer"
+                            class="inline-block bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                            Click here
                         </a>
                     </div>
                 </div>
@@ -105,14 +140,76 @@
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">
                             <!-- TODO: Replace with your project title -->
-                            Project Title 3
+                            Magic Lanthon
                         </h3>
                         <p class="text-gray-600 mb-4">
                             <!-- TODO: Write a brief description of your project. -->
-                            A brief description of what this project is about, the problem it solves, or the skills it demonstrates.
+                             I work as a video editor for Magic Lanthon, an organization focused on Film & Media. 
+                             I also design thumbnails and have edited two videos for them so far. 
+                             Videos were captured using an iPhone 11 and edited in Adobe Premiere Pro. 
+                             You can view the original videos in my Google Drive.
                         </p>
-                        <a href="YOUR_GOOGLE_DRIVE_SHARE_LINK_HERE" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
-                            View Document
+                        <a href="https://docs.google.com/document/d/1x-nrXEthXcvZGskb2_uejqau5BjptXcH/edit?usp=sharing&ouid=114150048035267706438&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer"
+                            class="inline-block bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                            Click here
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">
+                            <!-- TODO: Replace with your project title -->
+                            CSB
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            <!-- TODO: Write a brief description of your project. -->
+                            I work as a volunteer video editor for Coding Shikhbe Bangladesh (CSB). So far, I have edited one video for them. 
+                            Editing software: Adobe Premiere Pro. You can find the original video in my Google Drive. Additionally, 
+                            I have attached the YouTube video link below:
+                        </p>
+                        <a href="https://youtu.be/7HlZS5uXukY?si=TTihtiSqNByFCyvg" target="_blank" rel="noopener noreferrer"
+                            class="inline-block bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                            Click here
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="project-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">
+                            <!-- TODO: Replace with your project title -->
+                            Assignment
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            <!-- TODO: Write a brief description of your project. -->
+                            I shot and edited a documentary video for my friend's assignment about Shilaidaha Rabindra Kuthibari. Device used: iPhone 11. 
+                            Editing software: Adobe Premiere Pro. You can find the original video in my Google Drive:
+                        </p>
+                        <a href="https://drive.google.com/file/d/11tCytaWMve9IfUOgkEPk2BVhQLzPS-4P/view?usp=sharing" target="_blank" rel="noopener noreferrer"
+                            class="inline-block bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                            Click here
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="project-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">
+                            <!-- TODO: Replace with your project title -->
+                            GUCL
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            <!-- TODO: Write a brief description of your project. -->
+                            The Green University Club for Languages is renowned for promoting diverse languages and cultural activities. 
+                            As an active member, I have contributed in multiple ways. Please find some of my contributions in the link below.
+                        </p>
+                        <a href="https://drive.google.com/drive/folders/1QYPUvrMY-4R3I9hGQoIaAE_N98JNMeND?usp=sharing" target="_blank" rel="noopener noreferrer"
+                            class="inline-block bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                            Click here
                         </a>
                     </div>
                 </div>
@@ -129,7 +226,8 @@
                 I'm always open to discussing new projects or opportunities. Feel free to reach out!
             </p>
             <!-- TODO: Replace with your email address -->
-            <a href="mailto:your.email@example.com" class="bg-gray-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-900 transition-colors">
+            <a href="mailto:jhaloklihan4@gmail.com"
+                class="bg-gray-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-900 transition-colors">
                 Email Me
             </a>
         </section>
@@ -140,9 +238,10 @@
     <footer class="bg-gray-100 mt-12">
         <div class="container mx-auto px-6 py-4 text-center text-gray-500">
             <!-- TODO: Replace "Your Name" -->
-            &copy; 2024 Your Name. All Rights Reserved.
+            &copy; 2024 Koushik Ahamed. All Rights Reserved.
         </div>
     </footer>
 
 </body>
+
 </html>
